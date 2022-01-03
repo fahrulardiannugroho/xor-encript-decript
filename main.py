@@ -11,14 +11,16 @@ def decript(chipertext, key):
     return encript(chipertext, key)
 
 def main():
-    plaintext = 'matakuliahkripto'
-    key = 'ACD'
+    # fungsi enkripsi
+    plaintext = str(input("Masukkan plaintext: "))
+    key = 'ABC'
 
     print("Plaintext: ", plaintext)
     print("Enkripsi: ", encript(plaintext, key))
 
-    chipertext = ',"0 (1-*%)(6(30.'
-    key = "ACD"
+    # fungsi dekripsi
+    chipertext = str(input("Masukkan chippertest: "))
+    key = "ABC"
 
     print("Chipertext: ", chipertext)
     print("Dekripsi: ", decript(chipertext, key))
