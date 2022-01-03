@@ -26,5 +26,7 @@ def main():
 
         print("Chipertext: ", chipertext)
         print("Dekripsi: ", decript(chipertext, key))
+    else:
+        exit()
 
 main()
