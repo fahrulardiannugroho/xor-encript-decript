@@ -11,22 +11,16 @@ def decript(chipertext, key):
     return encript(chipertext, key)
 
 def main():
-    print("Pilih Menu: \n1. Enkripsi\n2. Dekripsi")
-    pilihan = int(input("Pilihan: "))
+    plaintext = 'matakuliahkripto'
+    key = 'ACD'
 
-    if pilihan == 1:
-        plaintext = str(input("Masukkan plaintext: "))
-        key = str(input("Masukkan key: "))
+    print("Plaintext: ", plaintext)
+    print("Enkripsi: ", encript(plaintext, key))
 
-        print("Plaintext: ", plaintext)
-        print("Enkripsi: ", encript(plaintext, key))
-    elif pilihan == 2:
-        chipertext = str(input("Masukkan chipertext: "))
-        key = str(input("Masukkan key: "))
+    chipertext = ',"0 (1-*%)(6(30.'
+    key = "ACD"
 
-        print("Chipertext: ", chipertext)
-        print("Dekripsi: ", decript(chipertext, key))
-    else:
-        exit()
+    print("Chipertext: ", chipertext)
+    print("Dekripsi: ", decript(chipertext, key))
 
 main()
